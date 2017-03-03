@@ -20,12 +20,12 @@ namespace ProductLocations_Draft2_Empty.Controllers {
                 ProductName = "Product Name",
                 DateAdded = DateTime.Now
             };
-            return Content("Hey");
+            return View(model);
         }
 
-        [HttpGet("/test")]
-        public IActionResult Hey() {
-            return Content("Test");
-        }
+        //[HttpGet("/test")]
+        //public IActionResult Hey() {
+        //    return Content("Test");
+        //}
     }
 }
