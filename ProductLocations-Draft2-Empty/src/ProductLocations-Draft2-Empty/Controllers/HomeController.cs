@@ -23,6 +23,7 @@ namespace ProductLocations_Draft2_Empty.Controllers {
             return Hey(model);
         }
 
+        [Route("~/index.html")]
         private IActionResult Hey(TableCell model2) {
             return Content("Hey");
         }
