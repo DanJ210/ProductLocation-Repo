@@ -13,7 +13,7 @@ namespace ProductLocations_Draft11_Full.Controllers {
                 ElementId = "0",
                 DateAdded = DateTime.Now
             };
-            return View("here is some text" + model);
+            return View();
         }
 
         public IActionResult About() {

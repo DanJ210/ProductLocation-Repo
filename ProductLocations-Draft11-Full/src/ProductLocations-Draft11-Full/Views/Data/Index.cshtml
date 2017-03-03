@@ -1,0 +1,24 @@
+﻿@model ProductLocations_Draft11_Full.Models.TableCell
+
+@*
+    For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<h1>@ViewData["EntryId"]</h1>
+<h1>@ViewData["ElementId"]</h1>
+<h1>@ViewData["DateAdded"]</h1>
+
+<p>@ViewData["Message"]</p>
+
+<table>
+    <tr>
+        <th></th>
+    </tr>
+    <tr>
+        @for (int i = 0; i < ViewData.Count; i++) {
+            <td>@ViewData["EntryId"]</td>
+            <td>@ViewData["ElementId"]</td>
+            <td>@ViewData["DateAdded"]</td>}
+    </tr>
+</table>
