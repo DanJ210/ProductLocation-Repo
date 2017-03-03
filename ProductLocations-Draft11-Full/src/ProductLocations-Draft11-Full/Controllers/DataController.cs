@@ -12,11 +12,12 @@ namespace ProductLocations_Draft11_Full.Controllers {
         // GET: /<controller>/
         public IActionResult Index() {
             var model = GetData();
+            var model2 = GetData();
             ViewData["EntryId"] = model.EntryId;
             ViewData["ElementId"] = model.ElementId;
             ViewData["DateAdded"] = model.DateAdded;
-            ViewData["Message"] = "This is a message";
-            return View();
+            //ViewData["Message"] = "This is a message";
+            return View(model);
         }
         // Creating a table cell of data to test
         public TableCell GetData() {
@@ -27,5 +28,9 @@ namespace ProductLocations_Draft11_Full.Controllers {
             };
             return cell;
         }
+
+        //public Task<IActionResult> Return() {
+        //    return View(await Models.TableCell.)
+        //}
     }
 }

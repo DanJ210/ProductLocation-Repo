@@ -29,6 +29,13 @@ textarea {
     width: 100%;
 }
 
+table {
+    border: 1px solid red;
+}
+#table0 {
+    border: 1px solid black;
+}
+
 /* Hide/rearrange for smaller screens */
 @media screen and (max-width: 767px) {
   /* Hide captions */
