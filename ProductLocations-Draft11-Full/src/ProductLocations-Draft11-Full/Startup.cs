@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
+using Microsoft.EntityFrameworkCore;
 
 namespace ProductLocations_Draft11_Full
 {
@@ -33,7 +34,10 @@ namespace ProductLocations_Draft11_Full
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Action<DbContextOptionsBuilder> UseSqlite;
+            //Action<DbContextOptionsBuilder> useSqlServer = null;
             // Add framework services.
+            //services.AddDbContext<>(UseSqlite);
             services.AddApplicationInsightsTelemetry(Configuration);
 
             services.AddMvc();

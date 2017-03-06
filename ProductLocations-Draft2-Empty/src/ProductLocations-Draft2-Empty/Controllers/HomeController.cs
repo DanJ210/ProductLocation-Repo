@@ -22,7 +22,7 @@ namespace ProductLocations_Draft2_Empty.Controllers {
             };
             return View(model);
         }
-
+        
         //[HttpGet("/test")]
         //public IActionResult Hey() {
         //    return Content("Test");

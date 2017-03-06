@@ -23,6 +23,8 @@ namespace ProductLocations_Draft2_Empty {
         //public IConfigurationRoot Configuration { get; }
         public void ConfigureServices(IServiceCollection services) {
 
+            services.AddDbContext
+
             services.AddMvc();
         }
 
